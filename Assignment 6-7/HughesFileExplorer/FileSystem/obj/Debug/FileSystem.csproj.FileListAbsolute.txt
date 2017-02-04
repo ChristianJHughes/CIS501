@@ -1,0 +1,4 @@
+C:\Users\cjhughes255\Desktop\Hughes.Christian.Assn7\HughesFileExplorer\FileSystem\bin\Debug\FileSystem.dll
+C:\Users\cjhughes255\Desktop\Hughes.Christian.Assn7\HughesFileExplorer\FileSystem\bin\Debug\FileSystem.pdb
+C:\Users\cjhughes255\Desktop\Hughes.Christian.Assn7\HughesFileExplorer\FileSystem\obj\Debug\FileSystem.dll
+C:\Users\cjhughes255\Desktop\Hughes.Christian.Assn7\HughesFileExplorer\FileSystem\obj\Debug\FileSystem.pdb

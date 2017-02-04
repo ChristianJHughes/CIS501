@@ -1,0 +1,10 @@
+C:\Users\cjhughes255\Desktop\CardConcepts\CardConcepts\bin\Debug\CardConcepts.dll
+C:\Users\cjhughes255\Desktop\CardConcepts\CardConcepts\bin\Debug\CardConcepts.pdb
+C:\Users\cjhughes255\Desktop\CardConcepts\CardConcepts\obj\Debug\CardConcepts.csprojResolveAssemblyReference.cache
+C:\Users\cjhughes255\Desktop\CardConcepts\CardConcepts\obj\Debug\CardConcepts.dll
+C:\Users\cjhughes255\Desktop\CardConcepts\CardConcepts\obj\Debug\CardConcepts.pdb
+C:\Users\SoClassyItHurts\Desktop\Hughes.Christian.Assn2\CardConcepts\CardConcepts\bin\Debug\CardConcepts.dll
+C:\Users\SoClassyItHurts\Desktop\Hughes.Christian.Assn2\CardConcepts\CardConcepts\bin\Debug\CardConcepts.pdb
+C:\Users\SoClassyItHurts\Desktop\Hughes.Christian.Assn2\CardConcepts\CardConcepts\obj\Debug\CardConcepts.csprojResolveAssemblyReference.cache
+C:\Users\SoClassyItHurts\Desktop\Hughes.Christian.Assn2\CardConcepts\CardConcepts\obj\Debug\CardConcepts.dll
+C:\Users\SoClassyItHurts\Desktop\Hughes.Christian.Assn2\CardConcepts\CardConcepts\obj\Debug\CardConcepts.pdb

@@ -1,0 +1,357 @@
+<Project>
+  <Name>BankingSystem.Assn4</Name>
+  <ProjectItem type="NClass.DiagramEditor.ClassDiagram.Diagram" assembly="NClass.DiagramEditor, Version=2.4.1823.0, Culture=neutral, PublicKeyToken=null">
+    <Name>Class Diagram</Name>
+    <Language>CSharp</Language>
+    <Entities>
+      <Entity type="Class">
+        <Name>TellerForm</Name>
+        <Access>Public</Access>
+        <Location left="208" top="162" />
+        <Size width="414" height="349" />
+        <Collapsed>False</Collapsed>
+        <Member type="Field">Button uxCreateNewAccountButton</Member>
+        <Member type="Field">Button uxWorkWithAnExistingAccountButton</Member>
+        <Member type="Field">Button uxCloseAnAccountButton</Member>
+        <Member type="Field">Button uxBeginNewSessionButton</Member>
+        <Member type="Field">Label uxStatusLabel</Member>
+        <Member type="Field">Label uxStaticTitleLabel</Member>
+        <Member type="Field">private Button uxSubmitButton</Member>
+        <Member type="Field">TellerStatus state</Member>
+        <Member type="Field">private Dictionary&lt;TellerStatus, string&gt; message</Member>
+        <Member type="Field">string currentInput</Member>
+        <Member type="Method">private void uxCreateNewAccountButton_Click(object sender, EventArgs e)</Member>
+        <Member type="Method">private void uxWorkWithAnExistingAccountButton_Click(object sender, EventArgs e)</Member>
+        <Member type="Method">private void uxCloseAnAccountButton_Click(object sender, EventArgs e)</Member>
+        <Member type="Method">private void uxSubmitButton_Click(object sender, EventArgs e)</Member>
+        <Member type="Method">private void uxBeginNewSessionButton_Click(object sender, EventArgs e)</Member>
+        <Member type="Method">public void updateForm(TellerStatus state)</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>TellerController</Name>
+        <Access>Public</Access>
+        <Location left="554" top="584" />
+        <Size width="602" height="310" />
+        <Collapsed>False</Collapsed>
+        <Member type="Field">TellerStatus state</Member>
+        <Member type="Field">CustomerDatabase cDatabase</Member>
+        <Member type="Field">private double output</Member>
+        <Member type="Field">private int currentAccountNum</Member>
+        <Member type="Field">private string currentName</Member>
+        <Member type="Field">private string currentAddress</Member>
+        <Member type="Field">AccountDatabase aDatabase</Member>
+        <Member type="Constructor">public TellerController(AccountDatabase a, CustomerDatabase c)</Member>
+        <Member type="Method">public Tuple&lt;TellerStatus, double&gt; handle(string s, TellerStatus stat)</Member>
+        <Member type="Method">private double completeWithdrawal(double amount)</Member>
+        <Member type="Method">private double completeDeposit(double amount)</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Enum">
+        <Name>TellerStatus</Name>
+        <Access>Public</Access>
+        <Location left="936" top="10" />
+        <Size width="216" height="469" />
+        <Collapsed>False</Collapsed>
+        <Value>Start</Value>
+        <Value>ClosingAnAccount</Value>
+        <Value>AttemptClosingCustomerAccount</Value>
+        <Value>ClosedCustomerAccount</Value>
+        <Value>AttemptClosingBankAccount</Value>
+        <Value>ClosedBankAccount</Value>
+        <Value>CreatingNewAccount</Value>
+        <Value>AttemptCreatingNewCustomerAccount</Value>
+        <Value>NeedValidAddress</Value>
+        <Value>CreatedNewCustomerAccount</Value>
+        <Value>AttemptCreatingNewBankAccount</Value>
+        <Value>CreatedNewBankAccount</Value>
+        <Value>WorkingWithAnExistingAccount</Value>
+        <Value>Depositing</Value>
+        <Value>NeedValidDepositAmount</Value>
+        <Value>DepositSuccess</Value>
+        <Value>Withdrawing</Value>
+        <Value>NeedValidWithdrawalAmount</Value>
+        <Value>WithdrawalSuccess</Value>
+        <Value>BalanceInquiry</Value>
+        <Value>DisplayingBalanceInquiry</Value>
+        <Value>InvalidInput</Value>
+        <Value>AccountAlreadyInUse</Value>
+        <Value>AccountNotFound</Value>
+      </Entity>
+      <Entity type="Interface">
+        <Name>CustomerDatabase</Name>
+        <Access>Public</Access>
+        <Location left="1353" top="584" />
+        <Size width="417" height="163" />
+        <Collapsed>False</Collapsed>
+        <Member type="Method">Customer lookUpCustomer(int customerNumber)</Member>
+        <Member type="Method">int addNewCustomer(string customerName, string customerAddress)</Member>
+        <Member type="Method">bool removeCustomer(int customerNumber)</Member>
+        <Member type="Method">int returnNewCustomerNumber()</Member>
+        <Member type="Method">bool addAccountToCustomer(int customerNumber, int accountNumber)</Member>
+      </Entity>
+      <Entity type="Interface">
+        <Name>AccountDatabase</Name>
+        <Access>Public</Access>
+        <Location left="1353" top="765" />
+        <Size width="417" height="231" />
+        <Collapsed>False</Collapsed>
+        <Member type="Method">int lookUpAccountReturnCustomerNumber(int accountNumber)</Member>
+        <Member type="Method">double depositIntoAccount(int accountNumber, double depositAmount)</Member>
+        <Member type="Method">double withdrawFromAccount(int accountNumber, double withdrawAmount)</Member>
+        <Member type="Method">double returnAccountBalance(int accountNumber)</Member>
+        <Member type="Method">void addNewAccount(int AccountNumber, int customerNumber, double accountBalance)</Member>
+        <Member type="Method">void removeAccount(int accountNumber)</Member>
+        <Member type="Method">int returnNewAccountNumber()</Member>
+        <Member type="Method">bool doesAccountExist()</Member>
+        <Member type="Method">bool logInAccount(int accountNumber)</Member>
+        <Member type="Method">void logOutAccount(int accountNumber)</Member>
+      </Entity>
+      <Entity type="Class">
+        <Name>CustomerDB</Name>
+        <Access>Public</Access>
+        <Location left="1867" top="506" />
+        <Size width="435" height="216" />
+        <Collapsed>False</Collapsed>
+        <Member type="Field">Dictionary&lt;int, Customer&gt; customers</Member>
+        <Member type="Field">int latestCustomerNumber</Member>
+        <Member type="Method">public Customer lookUpCustomer(int customerNumber)</Member>
+        <Member type="Method">public int addNewCustomer(string customerName, string customerAddress)</Member>
+        <Member type="Method">public bool removeCustomer(int customerNumber)</Member>
+        <Member type="Method">public int returnNewCustomerNumber()</Member>
+        <Member type="Method">public bool addAccountToCustomer(int customerNumber, int accountNumber)</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>AccountDB</Name>
+        <Access>Public</Access>
+        <Location left="1867" top="780" />
+        <Size width="489" height="281" />
+        <Collapsed>False</Collapsed>
+        <Member type="Field">Dictionary&lt;int, Account&gt; accounts</Member>
+        <Member type="Field">int latestAccountNumber</Member>
+        <Member type="Method">public int lookUpAccountReturnCustomerNumber(int accountNumber)</Member>
+        <Member type="Method">public void depositIntoAccount(int accountNumber, double depositAmount)</Member>
+        <Member type="Method">public bool withdrawFromAccount(int accountNumber, double withdrawAmount)</Member>
+        <Member type="Method">public double returnAccountBalance(int accountNumber)</Member>
+        <Member type="Method">public void addNewAccount(int customerNumber, double accountBalance)</Member>
+        <Member type="Method">public void removeAccount(int accountNumber)</Member>
+        <Member type="Method">public int returnNewAccountNumber()</Member>
+        <Member type="Method">public bool doesAccountExist(int accountNumber)</Member>
+        <Member type="Method">public bool logInAccount(int accountNumber)</Member>
+        <Member type="Method">public void logOutAccount(int accountNumber)</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>Customer</Name>
+        <Access>Public</Access>
+        <Location left="1404" top="304" />
+        <Size width="428" height="230" />
+        <Collapsed>False</Collapsed>
+        <Member type="Field">string customerName</Member>
+        <Member type="Field">string customerAddress</Member>
+        <Member type="Field">int customerNumber</Member>
+        <Member type="Field">List&lt;int&gt; customerAccounts</Member>
+        <Member type="Method">public string toString()</Member>
+        <Member type="Constructor">public Customer(string customerName, string customerAddress, int customerNumber)</Member>
+        <Member type="Method">public void addBankAccount(int accountNumber)</Member>
+        <Member type="Method">public bool removeBankAccount(int accountNumber)</Member>
+        <Member type="Method">public List&lt;Account&gt; returnAccountsOwned()</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>Account</Name>
+        <Access>Public</Access>
+        <Location left="1425" top="1048" />
+        <Size width="410" height="281" />
+        <Collapsed>False</Collapsed>
+        <Member type="Field">int accountNumber</Member>
+        <Member type="Field">int customerNumber</Member>
+        <Member type="Field">private enumeration status</Member>
+        <Member type="Field">double accountBalance</Member>
+        <Member type="Field">private status currentState</Member>
+        <Member type="Constructor">public Account(int accountNumber, int customerNumber, double accountBalance)</Member>
+        <Member type="Method">public double returnBalance()</Member>
+        <Member type="Method">public void deposit(double amountToDeposit)</Member>
+        <Member type="Method">public bool amountToWithdraw(double amountToWithdraw)</Member>
+        <Member type="Method">public int returnCustomerNumber()</Member>
+        <Member type="Method">public bool logIn()</Member>
+        <Member type="Method">public void logOut()</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>AtmForm</Name>
+        <Access>Public</Access>
+        <Location left="581" top="1016" />
+        <Size width="351" height="247" />
+        <Collapsed>False</Collapsed>
+        <Member type="Field">Button[] numeral_pad</Member>
+        <Member type="Field">Button uxOKButton</Member>
+        <Member type="Field">Label uxDisplayMenuLabel</Member>
+        <Member type="Field">TextBox uxCustomerInputTextbox</Member>
+        <Member type="Field">Label uxStaticTitleLabel</Member>
+        <Member type="Field">AtmStatus state</Member>
+        <Member type="Field">private Dictionary&lt;AtmStatus, string&gt; message</Member>
+        <Member type="Constructor">public AtmForm(AtmPresenter controller)</Member>
+        <Member type="Method">void numeral_pad_Click(object sender, EventArgs e)</Member>
+        <Member type="Method">void uxOKButton_Click(object sender, EventArgs e)</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Enum">
+        <Name>AtmStatus</Name>
+        <Access>Public</Access>
+        <Location left="1050" top="1003" />
+        <Size width="171" height="197" />
+        <Collapsed>False</Collapsed>
+        <Value>Start</Value>
+        <Value>AccountNotFound</Value>
+        <Value>LoggedIn</Value>
+        <Value>ChoseBalanceInquiry</Value>
+        <Value>ChoseWithdrawalNeedAmount</Value>
+        <Value>CompletedWithdrawal</Value>
+        <Value>InvalidInput</Value>
+        <Value>AccountAlreadyInUse</Value>
+      </Entity>
+      <Entity type="Class">
+        <Name>AtmPresenter</Name>
+        <Access>Public</Access>
+        <Location left="1015" top="1382" />
+        <Size width="482" height="230" />
+        <Collapsed>False</Collapsed>
+        <Member type="Field">AtmStatus state</Member>
+        <Member type="Field">CustomerDatabase custDatabase</Member>
+        <Member type="Field">AccountDatabase acctDatabase</Member>
+        <Member type="Field">private double balance</Member>
+        <Member type="Field">private int accountNumber</Member>
+        <Member type="Constructor">public AtmPresenter(CustomerDatabase c, AccountDatabase a)</Member>
+        <Member type="Method">public Tuple&lt;AtmStatus, double&gt; handle(string s)</Member>
+        <Member type="Method">private double checkBalance(int accountNumber)</Member>
+        <Member type="Method">private double completeWithdrawal(int accountNumber, double withdrawAmount)</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+    </Entities>
+    <Relationships>
+      <Relationship type="Dependency" first="0" second="2">
+        <Label>
+        </Label>
+        <StartOrientation>Horizontal</StartOrientation>
+        <EndOrientation>Horizontal</EndOrientation>
+        <BendPoint relativeToStartShape="False">
+          <X>910</X>
+          <Y>218</Y>
+        </BendPoint>
+      </Relationship>
+      <Relationship type="Dependency" first="2" second="1">
+        <Label>
+        </Label>
+        <StartOrientation>Vertical</StartOrientation>
+        <EndOrientation>Vertical</EndOrientation>
+      </Relationship>
+      <Relationship type="Association" first="1" second="3">
+        <Label>
+        </Label>
+        <StartOrientation>Horizontal</StartOrientation>
+        <EndOrientation>Horizontal</EndOrientation>
+        <Direction>Unidirectional</Direction>
+        <AssociationType>Association</AssociationType>
+      </Relationship>
+      <Relationship type="Association" first="1" second="4">
+        <Label>
+        </Label>
+        <StartOrientation>Horizontal</StartOrientation>
+        <EndOrientation>Horizontal</EndOrientation>
+        <Direction>Unidirectional</Direction>
+        <AssociationType>Association</AssociationType>
+      </Relationship>
+      <Relationship type="Realization" first="5" second="3">
+        <StartOrientation>Horizontal</StartOrientation>
+        <EndOrientation>Horizontal</EndOrientation>
+      </Relationship>
+      <Relationship type="Realization" first="6" second="4">
+        <StartOrientation>Horizontal</StartOrientation>
+        <EndOrientation>Horizontal</EndOrientation>
+      </Relationship>
+      <Relationship type="Association" first="5" second="7">
+        <StartOrientation>Vertical</StartOrientation>
+        <EndOrientation>Horizontal</EndOrientation>
+        <BendPoint relativeToStartShape="True">
+          <X>1908</X>
+          <Y>450</Y>
+        </BendPoint>
+        <Direction>Unidirectional</Direction>
+        <AssociationType>Composition</AssociationType>
+        <StartMultiplicity>*</StartMultiplicity>
+      </Relationship>
+      <Relationship type="Association" first="6" second="8">
+        <StartOrientation>Vertical</StartOrientation>
+        <EndOrientation>Horizontal</EndOrientation>
+        <BendPoint relativeToStartShape="False">
+          <X>1874</X>
+          <Y>1086</Y>
+        </BendPoint>
+        <Direction>Unidirectional</Direction>
+        <AssociationType>Composition</AssociationType>
+        <StartMultiplicity>*</StartMultiplicity>
+      </Relationship>
+      <Relationship type="Dependency" first="11" second="10">
+        <Label>
+        </Label>
+        <StartOrientation>Vertical</StartOrientation>
+        <EndOrientation>Vertical</EndOrientation>
+        <BendPoint relativeToStartShape="False">
+          <X>1134</X>
+          <Y>1241</Y>
+        </BendPoint>
+      </Relationship>
+      <Relationship type="Dependency" first="9" second="10">
+        <Label>
+        </Label>
+        <StartOrientation>Horizontal</StartOrientation>
+        <EndOrientation>Horizontal</EndOrientation>
+      </Relationship>
+      <Relationship type="Association" first="9" second="11">
+        <StartOrientation>Vertical</StartOrientation>
+        <EndOrientation>Horizontal</EndOrientation>
+        <BendPoint relativeToStartShape="True">
+          <X>750</X>
+          <Y>1349</Y>
+        </BendPoint>
+        <Direction>Unidirectional</Direction>
+        <AssociationType>Association</AssociationType>
+        <EndRole>contoller</EndRole>
+        <EndMultiplicity>1</EndMultiplicity>
+      </Relationship>
+      <Relationship type="Association" first="11" second="4">
+        <Label>
+        </Label>
+        <StartOrientation>Vertical</StartOrientation>
+        <EndOrientation>Vertical</EndOrientation>
+        <BendPoint relativeToStartShape="False">
+          <X>1410</X>
+          <Y>1035</Y>
+        </BendPoint>
+        <Direction>Unidirectional</Direction>
+        <AssociationType>Association</AssociationType>
+      </Relationship>
+      <Relationship type="Association" first="11" second="3">
+        <Label>
+        </Label>
+        <StartOrientation>Vertical</StartOrientation>
+        <EndOrientation>Horizontal</EndOrientation>
+        <BendPoint relativeToStartShape="False">
+          <X>1306</X>
+          <Y>715</Y>
+        </BendPoint>
+        <Direction>Unidirectional</Direction>
+        <AssociationType>Association</AssociationType>
+      </Relationship>
+      <Relationship type="Association" first="0" second="1">
+        <StartOrientation>Vertical</StartOrientation>
+        <EndOrientation>Horizontal</EndOrientation>
+        <Direction>Unidirectional</Direction>
+        <AssociationType>Association</AssociationType>
+        <EndRole>controller</EndRole>
+      </Relationship>
+    </Relationships>
+  </ProjectItem>
+</Project>

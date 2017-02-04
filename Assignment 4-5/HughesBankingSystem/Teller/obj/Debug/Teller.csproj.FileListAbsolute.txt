@@ -1,0 +1,13 @@
+C:\Users\cjhughes255\Desktop\Hughes.Christian.Assn5\HughesBankingSystem\Teller\bin\Debug\Teller.exe.config
+C:\Users\cjhughes255\Desktop\Hughes.Christian.Assn5\HughesBankingSystem\Teller\obj\Debug\Teller.csprojResolveAssemblyReference.cache
+C:\Users\cjhughes255\Desktop\Hughes.Christian.Assn5\HughesBankingSystem\Teller\obj\Debug\Teller.TellerForm.resources
+C:\Users\cjhughes255\Desktop\Hughes.Christian.Assn5\HughesBankingSystem\Teller\obj\Debug\Teller.Properties.Resources.resources
+C:\Users\cjhughes255\Desktop\Hughes.Christian.Assn5\HughesBankingSystem\Teller\obj\Debug\Teller.csproj.GenerateResource.Cache
+C:\Users\cjhughes255\Desktop\Hughes.Christian.Assn5\HughesBankingSystem\Teller\bin\Debug\Teller.exe
+C:\Users\cjhughes255\Desktop\Hughes.Christian.Assn5\HughesBankingSystem\Teller\bin\Debug\Teller.pdb
+C:\Users\cjhughes255\Desktop\Hughes.Christian.Assn5\HughesBankingSystem\Teller\bin\Debug\BankingDatabase.dll
+C:\Users\cjhughes255\Desktop\Hughes.Christian.Assn5\HughesBankingSystem\Teller\bin\Debug\WindowsFormsApplication1.exe
+C:\Users\cjhughes255\Desktop\Hughes.Christian.Assn5\HughesBankingSystem\Teller\bin\Debug\BankingDatabase.pdb
+C:\Users\cjhughes255\Desktop\Hughes.Christian.Assn5\HughesBankingSystem\Teller\bin\Debug\WindowsFormsApplication1.pdb
+C:\Users\cjhughes255\Desktop\Hughes.Christian.Assn5\HughesBankingSystem\Teller\obj\Debug\Teller.exe
+C:\Users\cjhughes255\Desktop\Hughes.Christian.Assn5\HughesBankingSystem\Teller\obj\Debug\Teller.pdb

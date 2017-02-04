@@ -1,0 +1,9 @@
+C:\Users\SoClassyItHurts\Desktop\Blackjack\Blackjack\bin\Debug\Blackjack.exe.config
+C:\Users\SoClassyItHurts\Desktop\Hughes.Christian.Assn1\Blackjack\Blackjack\bin\Debug\Blackjack.exe.config
+C:\Users\SoClassyItHurts\Desktop\Hughes.Christian.Assn1\Blackjack\Blackjack\bin\Debug\Blackjack.exe
+C:\Users\SoClassyItHurts\Desktop\Hughes.Christian.Assn1\Blackjack\Blackjack\bin\Debug\Blackjack.pdb
+C:\Users\SoClassyItHurts\Desktop\Hughes.Christian.Assn1\Blackjack\Blackjack\bin\Debug\CardConcepts.dll
+C:\Users\SoClassyItHurts\Desktop\Hughes.Christian.Assn1\Blackjack\Blackjack\bin\Debug\CardConcepts.pdb
+C:\Users\SoClassyItHurts\Desktop\Hughes.Christian.Assn1\Blackjack\Blackjack\obj\Debug\Blackjack.csprojResolveAssemblyReference.cache
+C:\Users\SoClassyItHurts\Desktop\Hughes.Christian.Assn1\Blackjack\Blackjack\obj\Debug\Blackjack.exe
+C:\Users\SoClassyItHurts\Desktop\Hughes.Christian.Assn1\Blackjack\Blackjack\obj\Debug\Blackjack.pdb

@@ -1,0 +1,13 @@
+C:\Users\cjhughes255\Desktop\Hughes.Christian.Assn3\Blackjack3\Blackjack3\bin\Debug\Blackjack3.exe.config
+C:\Users\cjhughes255\Desktop\Hughes.Christian.Assn3\Blackjack3\Blackjack3\bin\Debug\Blackjack3.exe
+C:\Users\cjhughes255\Desktop\Hughes.Christian.Assn3\Blackjack3\Blackjack3\bin\Debug\Blackjack3.pdb
+C:\Users\cjhughes255\Desktop\Hughes.Christian.Assn3\Blackjack3\Blackjack3\bin\Debug\CardConcepts.dll
+C:\Users\cjhughes255\Desktop\Hughes.Christian.Assn3\Blackjack3\Blackjack3\bin\Debug\CardConcepts.pdb
+C:\Users\cjhughes255\Desktop\Hughes.Christian.Assn3\Blackjack3\Blackjack3\obj\Debug\Blackjack3.csprojResolveAssemblyReference.cache
+C:\Users\cjhughes255\Desktop\Hughes.Christian.Assn3\Blackjack3\Blackjack3\obj\Debug\Blackjack3.Properties.Resources.resources
+C:\Users\cjhughes255\Desktop\Hughes.Christian.Assn3\Blackjack3\Blackjack3\obj\Debug\Blackjack3.csproj.GenerateResource.Cache
+C:\Users\cjhughes255\Desktop\Hughes.Christian.Assn3\Blackjack3\Blackjack3\obj\Debug\Blackjack3.exe
+C:\Users\cjhughes255\Desktop\Hughes.Christian.Assn3\Blackjack3\Blackjack3\obj\Debug\Blackjack3.pdb
+C:\Users\cjhughes255\Desktop\Hughes.Christian.Assn3\Blackjack3\Blackjack3\obj\Debug\Blackjack3.HumansHandForm.resources
+C:\Users\cjhughes255\Desktop\Hughes.Christian.Assn3\Blackjack3\Blackjack3\obj\Debug\Blackjack3.Scoreboard.resources
+C:\Users\cjhughes255\Desktop\Hughes.Christian.Assn3\Blackjack3\Blackjack3\obj\Debug\Blackjack3.HouseHandForm.resources

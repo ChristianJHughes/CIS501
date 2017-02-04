@@ -1,0 +1,10 @@
+C:\Users\cjhughes255\Desktop\Hughes.Christian.Assn3\Blackjack3\UnitTests\bin\Debug\UnitTests.exe.config
+C:\Users\cjhughes255\Desktop\Hughes.Christian.Assn3\Blackjack3\UnitTests\bin\Debug\UnitTests.exe
+C:\Users\cjhughes255\Desktop\Hughes.Christian.Assn3\Blackjack3\UnitTests\bin\Debug\UnitTests.pdb
+C:\Users\cjhughes255\Desktop\Hughes.Christian.Assn3\Blackjack3\UnitTests\bin\Debug\Blackjack3.exe
+C:\Users\cjhughes255\Desktop\Hughes.Christian.Assn3\Blackjack3\UnitTests\bin\Debug\CardConcepts.dll
+C:\Users\cjhughes255\Desktop\Hughes.Christian.Assn3\Blackjack3\UnitTests\bin\Debug\Blackjack3.pdb
+C:\Users\cjhughes255\Desktop\Hughes.Christian.Assn3\Blackjack3\UnitTests\bin\Debug\CardConcepts.pdb
+C:\Users\cjhughes255\Desktop\Hughes.Christian.Assn3\Blackjack3\UnitTests\obj\Debug\UnitTests.csprojResolveAssemblyReference.cache
+C:\Users\cjhughes255\Desktop\Hughes.Christian.Assn3\Blackjack3\UnitTests\obj\Debug\UnitTests.exe
+C:\Users\cjhughes255\Desktop\Hughes.Christian.Assn3\Blackjack3\UnitTests\obj\Debug\UnitTests.pdb

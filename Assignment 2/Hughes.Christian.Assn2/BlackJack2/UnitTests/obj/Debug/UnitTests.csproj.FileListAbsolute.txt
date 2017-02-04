@@ -1,0 +1,10 @@
+C:\Users\SoClassyItHurts\Desktop\Hughes.Christian.Assn2\BlackJack2\UnitTests\bin\Debug\UnitTests.exe.config
+C:\Users\SoClassyItHurts\Desktop\Hughes.Christian.Assn2\BlackJack2\UnitTests\obj\Debug\UnitTests.csprojResolveAssemblyReference.cache
+C:\Users\SoClassyItHurts\Desktop\Hughes.Christian.Assn2\BlackJack2\UnitTests\bin\Debug\UnitTests.exe
+C:\Users\SoClassyItHurts\Desktop\Hughes.Christian.Assn2\BlackJack2\UnitTests\bin\Debug\UnitTests.pdb
+C:\Users\SoClassyItHurts\Desktop\Hughes.Christian.Assn2\BlackJack2\UnitTests\bin\Debug\BlackJack2.exe
+C:\Users\SoClassyItHurts\Desktop\Hughes.Christian.Assn2\BlackJack2\UnitTests\bin\Debug\CardConcepts.dll
+C:\Users\SoClassyItHurts\Desktop\Hughes.Christian.Assn2\BlackJack2\UnitTests\bin\Debug\BlackJack2.pdb
+C:\Users\SoClassyItHurts\Desktop\Hughes.Christian.Assn2\BlackJack2\UnitTests\bin\Debug\CardConcepts.pdb
+C:\Users\SoClassyItHurts\Desktop\Hughes.Christian.Assn2\BlackJack2\UnitTests\obj\Debug\UnitTests.exe
+C:\Users\SoClassyItHurts\Desktop\Hughes.Christian.Assn2\BlackJack2\UnitTests\obj\Debug\UnitTests.pdb

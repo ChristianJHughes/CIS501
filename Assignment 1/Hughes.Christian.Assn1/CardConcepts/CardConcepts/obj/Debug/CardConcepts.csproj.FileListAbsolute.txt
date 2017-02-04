@@ -1,0 +1,19 @@
+C:\Users\schmidt\Documents\Visual Studio 2010\Projects\501s13VS\Lecture02VS\CardConcepts\CardConcepts\bin\Debug\CardConcepts.dll
+C:\Users\schmidt\Documents\Visual Studio 2010\Projects\501s13VS\Lecture02VS\CardConcepts\CardConcepts\bin\Debug\CardConcepts.pdb
+C:\Users\schmidt\Documents\Visual Studio 2010\Projects\501s13VS\Lecture02VS\CardConcepts\CardConcepts\obj\Debug\CardConcepts.dll
+C:\Users\schmidt\Documents\Visual Studio 2010\Projects\501s13VS\Lecture02VS\CardConcepts\CardConcepts\obj\Debug\CardConcepts.pdb
+C:\Users\schmidt\Documents\Visual Studio 2010\Projects\501s13VS\Lecture02VS\CardConcepts\CardConcepts\obj\Debug\CardConcepts.csprojResolveAssemblyReference.cache
+C:\Users\schmidt\Documents\Visual Studio 2010\Projects\501s14VS\Lecture02VS\CardConcepts\CardConcepts\bin\Debug\CardConcepts.dll
+C:\Users\schmidt\Documents\Visual Studio 2010\Projects\501s14VS\Lecture02VS\CardConcepts\CardConcepts\bin\Debug\CardConcepts.pdb
+C:\Users\schmidt\Documents\Visual Studio 2010\Projects\501s14VS\Lecture02VS\CardConcepts\CardConcepts\obj\Debug\CardConcepts.dll
+C:\Users\schmidt\Documents\Visual Studio 2010\Projects\501s14VS\Lecture02VS\CardConcepts\CardConcepts\obj\Debug\CardConcepts.pdb
+C:\Users\schmidt\Documents\Visual Studio 2010\Projects\501s14VS\Lecture02VS\CardConcepts\CardConcepts\obj\Debug\CardConcepts.csprojResolveAssemblyReference.cache
+C:\cygwin\home\schmidt\501s14\501s14VS\Lecture02VS\CardConcepts\CardConcepts\bin\Debug\CardConcepts.dll
+C:\cygwin\home\schmidt\501s14\501s14VS\Lecture02VS\CardConcepts\CardConcepts\bin\Debug\CardConcepts.pdb
+C:\cygwin\home\schmidt\501s14\501s14VS\Lecture02VS\CardConcepts\CardConcepts\obj\Debug\CardConcepts.dll
+C:\cygwin\home\schmidt\501s14\501s14VS\Lecture02VS\CardConcepts\CardConcepts\obj\Debug\CardConcepts.pdb
+C:\Users\SoClassyItHurts\Desktop\Hughes.Christian.Assn1\CardConcepts\CardConcepts\bin\Debug\CardConcepts.dll
+C:\Users\SoClassyItHurts\Desktop\Hughes.Christian.Assn1\CardConcepts\CardConcepts\bin\Debug\CardConcepts.pdb
+C:\Users\SoClassyItHurts\Desktop\Hughes.Christian.Assn1\CardConcepts\CardConcepts\obj\Debug\CardConcepts.csprojResolveAssemblyReference.cache
+C:\Users\SoClassyItHurts\Desktop\Hughes.Christian.Assn1\CardConcepts\CardConcepts\obj\Debug\CardConcepts.dll
+C:\Users\SoClassyItHurts\Desktop\Hughes.Christian.Assn1\CardConcepts\CardConcepts\obj\Debug\CardConcepts.pdb

@@ -1,0 +1,10 @@
+C:\Users\cjhughes255\Desktop\Hughes.Christian.Assn7\HughesFileExplorer\UnitTests\bin\Debug\UnitTests.exe.config
+C:\Users\cjhughes255\Desktop\Hughes.Christian.Assn7\HughesFileExplorer\UnitTests\bin\Debug\UnitTests.exe
+C:\Users\cjhughes255\Desktop\Hughes.Christian.Assn7\HughesFileExplorer\UnitTests\bin\Debug\UnitTests.pdb
+C:\Users\cjhughes255\Desktop\Hughes.Christian.Assn7\HughesFileExplorer\UnitTests\bin\Debug\FileSystem.dll
+C:\Users\cjhughes255\Desktop\Hughes.Christian.Assn7\HughesFileExplorer\UnitTests\bin\Debug\FileSystem.pdb
+C:\Users\cjhughes255\Desktop\Hughes.Christian.Assn7\HughesFileExplorer\UnitTests\bin\Debug\FileSystemController.pdb
+C:\Users\cjhughes255\Desktop\Hughes.Christian.Assn7\HughesFileExplorer\UnitTests\obj\Debug\UnitTests.csprojResolveAssemblyReference.cache
+C:\Users\cjhughes255\Desktop\Hughes.Christian.Assn7\HughesFileExplorer\UnitTests\obj\Debug\UnitTests.exe
+C:\Users\cjhughes255\Desktop\Hughes.Christian.Assn7\HughesFileExplorer\UnitTests\obj\Debug\UnitTests.pdb
+C:\Users\cjhughes255\Desktop\Hughes.Christian.Assn7\HughesFileExplorer\UnitTests\bin\Debug\FileSystemController.dll

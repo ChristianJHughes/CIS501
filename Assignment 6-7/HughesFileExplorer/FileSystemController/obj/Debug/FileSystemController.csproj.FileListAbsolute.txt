@@ -1,0 +1,7 @@
+C:\Users\cjhughes255\Desktop\Hughes.Christian.Assn7\HughesFileExplorer\FileSystemController\bin\Debug\FileSystemController.dll
+C:\Users\cjhughes255\Desktop\Hughes.Christian.Assn7\HughesFileExplorer\FileSystemController\bin\Debug\FileSystemController.pdb
+C:\Users\cjhughes255\Desktop\Hughes.Christian.Assn7\HughesFileExplorer\FileSystemController\bin\Debug\FileSystem.dll
+C:\Users\cjhughes255\Desktop\Hughes.Christian.Assn7\HughesFileExplorer\FileSystemController\bin\Debug\FileSystem.pdb
+C:\Users\cjhughes255\Desktop\Hughes.Christian.Assn7\HughesFileExplorer\FileSystemController\obj\Debug\FileSystemController.dll
+C:\Users\cjhughes255\Desktop\Hughes.Christian.Assn7\HughesFileExplorer\FileSystemController\obj\Debug\FileSystemController.pdb
+C:\Users\cjhughes255\Desktop\Hughes.Christian.Assn7\HughesFileExplorer\FileSystemController\obj\Debug\FileSystemController.csprojResolveAssemblyReference.cache

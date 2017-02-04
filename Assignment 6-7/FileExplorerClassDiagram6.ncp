@@ -1,0 +1,519 @@
+<Project>
+  <Name>FileExplorer</Name>
+  <ProjectItem type="NClass.DiagramEditor.ClassDiagram.Diagram" assembly="NClass.DiagramEditor, Version=2.4.1823.0, Culture=neutral, PublicKeyToken=null">
+    <Name>FileExplorer Class Diagram</Name>
+    <Language>CSharp</Language>
+    <Entities>
+      <Entity type="Class">
+        <Name>ControlPanelForm</Name>
+        <Access>Public</Access>
+        <Location left="38" top="581" />
+        <Size width="316" height="162" />
+        <Collapsed>False</Collapsed>
+        <Member type="Field">private Button uxOpenButton</Member>
+        <Member type="Field">private Button uxCloseAllButton</Member>
+        <Member type="Field">private Label uxStaticTitleLabel</Member>
+        <Member type="Method">private void uxOpenButton_Click(object sender, EventArgs e)</Member>
+        <Member type="Method">private void uxCloseAllButton_Click(object sender, EventArgs e)</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>DirectoryForm</Name>
+        <Access>Public</Access>
+        <Location left="12" top="893" />
+        <Size width="359" height="298" />
+        <Collapsed>False</Collapsed>
+        <Member type="Field">private Label uxStaticTitleLabel</Member>
+        <Member type="Field">private Label uxFolderStatusLabel</Member>
+        <Member type="Field">private ListBox uxDirectoryBox</Member>
+        <Member type="Field">private Button uxOpenButton</Member>
+        <Member type="Field">private Button uxNewFileButton</Member>
+        <Member type="Field">private Button uxDeleteButton</Member>
+        <Member type="Field">private Button uxNewFolderButton</Member>
+        <Member type="Field">Button uxCloseButton</Member>
+        <Member type="Method">private void uxOpen_Click(object sender, EventArgs e)</Member>
+        <Member type="Method">private void uxDeleteButton_Click(object sender, EventArgs e)</Member>
+        <Member type="Method">private void uxNewFileButton_Click(object sender, EventArgs e)</Member>
+        <Member type="Method">private void uxNewFolderButton_Click(object sender, EventArgs e)</Member>
+        <Member type="Method">public void updateEntryList()</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>EditForm</Name>
+        <Access>Public</Access>
+        <Location left="413" top="1201" />
+        <Size width="384" height="281" />
+        <Collapsed>False</Collapsed>
+        <Member type="Field">private Label uxStaticTitleLabel</Member>
+        <Member type="Field">private Label uxFileNameLabel</Member>
+        <Member type="Field">private TextBox uxFileContentsTextBox</Member>
+        <Member type="Field">private Button uxSaveButton</Member>
+        <Member type="Field">private Button uxExitButton</Member>
+        <Member type="Field">CloseEditMethod closeMethod</Member>
+        <Member type="Field">TextFile workingTextFile</Member>
+        <Member type="Constructor">public EditForm(CloseEditMethod closeMethod, TextFile textContents)</Member>
+        <Member type="Method">public void handleExit()</Member>
+        <Member type="Method">public void handleSavingTextFile()</Member>
+        <Member type="Method">private void uxSaveButton_Click(object sender, EventArgs e)</Member>
+        <Member type="Method">private void uxExit_Click(object sender, EventArgs e)</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>Entry</Name>
+        <Access>Public</Access>
+        <Location left="1456" top="52" />
+        <Size width="163" height="116" />
+        <Collapsed>False</Collapsed>
+        <Member type="Field">protected string name</Member>
+        <Member type="Property">public string Name { get; set; }</Member>
+        <Modifier>Abstract</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>TextFile</Name>
+        <Access>Public</Access>
+        <Location left="1551" top="280" />
+        <Size width="243" height="151" />
+        <Collapsed>False</Collapsed>
+        <Member type="Field">private List&lt;string&gt; textLines</Member>
+        <Member type="Constructor">public TextFile(string fileName)</Member>
+        <Member type="Method">public void addLine(string newLine)</Member>
+        <Member type="Property">public List&lt;string&gt; Lines { get; set; }</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>Folder</Name>
+        <Access>Public</Access>
+        <Location left="1228" top="280" />
+        <Size width="215" height="145" />
+        <Collapsed>False</Collapsed>
+        <Member type="Constructor">public Folder(string name)</Member>
+        <Member type="Method">public Entry find(string name)</Member>
+        <Member type="Method">public void add(Entry e)</Member>
+        <Member type="Method">public List&lt;Entry&gt; getListing()</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>FolderIterator</Name>
+        <Access>Public</Access>
+        <Location left="816" top="318" />
+        <Size width="257" height="146" />
+        <Collapsed>False</Collapsed>
+        <Member type="Field">int newField</Member>
+        <Member type="Field">private StreamReader inputFileReader</Member>
+        <Member type="Constructor">public FolderIterator(StreamReader inputFile)</Member>
+        <Member type="Method">public Folder nextFolder()</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>Program</Name>
+        <Access>Public</Access>
+        <Location left="120" top="226" />
+        <Size width="488" height="213" />
+        <Collapsed>False</Collapsed>
+        <Member type="Field">private StreamReader inputFileReader</Member>
+        <Member type="Field">private FolderIterator inputFileIterator</Member>
+        <Member type="Field">private Dictionary&lt;string, Folder&gt; foldersLoaded</Member>
+        <Member type="Field">ControlPanelController controller</Member>
+        <Member type="Field">ControlPanelForm controlForm</Member>
+        <Member type="Field">Queue&lt;Folder&gt; foldersReadInOrder</Member>
+        <Member type="Method">public void Main()</Member>
+        <Member type="Method">public void loadRoot(Dictionary&lt;string,Folder&gt; foldersLoaded, FolderIterator inputFileIterator)</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>ControlPanelController</Name>
+        <Access>Public</Access>
+        <Location left="551" top="526" />
+        <Size width="635" height="315" />
+        <Collapsed>False</Collapsed>
+        <Member type="Field">private List&lt;DirectoryForm&gt; directoryFormsOpen</Member>
+        <Member type="Field">private List&lt;EditForm&gt; editFormsOpen</Member>
+        <Member type="Field">private List&lt;Observer&gt; registry</Member>
+        <Member type="Field">FolderIterator iter</Member>
+        <Member type="Field">Dictionary&lt;string,Folder&gt; foldersLoaded</Member>
+        <Member type="Field">Queue&lt;Folder&gt; foldersReadInOrder</Member>
+        <Member type="Constructor">public ControlPanelController(FolderIterator iter, Dictionary&lt;string,Folder&gt; foldersLoaded, Queue&lt;Folder&gt; foldersReadInOrder)</Member>
+        <Member type="Method">public void handleNewDirectoryForm()</Member>
+        <Member type="Method">public void CloseDirectoryForm(DirectoryForm dForm)</Member>
+        <Member type="Method">public void CloseEditForm(EditForm eForm)</Member>
+        <Member type="Method">public void acknowledgeNewEditForm(EditForm eForm)</Member>
+        <Member type="Method">public void handleCloseAllForms()</Member>
+        <Member type="Method">public void register(Observer f)</Member>
+        <Member type="Method">public void handleUpdatingAllDirectoryForms()</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Comment">
+        <Text>Folders in the foldersLoaded Dictionary will be null if they are not yet loaded. The values will be retrieved by the FolderIterator as the user requests them. Such is an implentation on the virtual proxy design pattern.</Text>
+        <Location left="120" top="78" />
+        <Size width="197" height="116" />
+      </Entity>
+      <Entity type="Class">
+        <Name>DirectoryFormController</Name>
+        <Access>Public</Access>
+        <Location left="551" top="893" />
+        <Size width="1032" height="264" />
+        <Collapsed>False</Collapsed>
+        <Member type="Field">private CloseDirectoryMethod cdMethod</Member>
+        <Member type="Field">private CloseEditMethod ceMethod</Member>
+        <Member type="Field">private NewEditMethod neMethod</Member>
+        <Member type="Field">FolderIterator iter</Member>
+        <Member type="Field">Dictionary&lt;string,Folder&gt; foldersLoaded</Member>
+        <Member type="Field">Observer updateAllForms</Member>
+        <Member type="Constructor">public DirectoryFormController(FolderIterator iter, Dictionary&lt;string,Folder&gt; foldersLoaded, Observer updateAllForms, CloseDirectoryMethod cdMethod, NewEditMethod neMethod, CloseEditMethod ceMethod)</Member>
+        <Member type="Method">public void handleOpen()</Member>
+        <Member type="Method">public void handleDeleteEntry()</Member>
+        <Member type="Method">public void handleNewFolder()</Member>
+        <Member type="Method">public void handleNewFile()</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Comment">
+        <Text>This form is simple, so the controller (the methods that do all of the grunt work) are contained directly within the form class.</Text>
+        <Location left="204" top="1278" />
+        <Size width="172" height="104" />
+      </Entity>
+      <Entity type="Delegate">
+        <Name>CloseDirectoryMethod</Name>
+        <Access>Public</Access>
+        <Location left="1263" top="641" />
+        <Size width="162" height="78" />
+        <Collapsed>False</Collapsed>
+        <ReturnType>void</ReturnType>
+        <Param>DirectoryForm dForm</Param>
+      </Entity>
+      <Entity type="Delegate">
+        <Name>CloseEditMethod</Name>
+        <Access>Public</Access>
+        <Location left="1263" top="530" />
+        <Size width="162" height="79" />
+        <Collapsed>False</Collapsed>
+        <ReturnType>void</ReturnType>
+        <Param>EditForm eForm</Param>
+      </Entity>
+      <Entity type="Delegate">
+        <Name>NewEditMethod</Name>
+        <Access>Public</Access>
+        <Location left="1263" top="744" />
+        <Size width="162" height="79" />
+        <Collapsed>False</Collapsed>
+        <ReturnType>void</ReturnType>
+        <Param>EditForm eForm</Param>
+      </Entity>
+      <Entity type="Comment">
+        <Text>NClass will not allow me to implement Realization on the Delegates. I have therfore subsituted instances of Realization with Dependency.</Text>
+        <Location left="1646" top="542" />
+        <Size width="160" height="105" />
+      </Entity>
+      <Entity type="Comment">
+        <Text>Is it alright to add a dedicated close button to the Directory Form? That way I can ensure that the proper closing methods are called at termination.</Text>
+        <Location left="12" top="1278" />
+        <Size width="160" height="103" />
+      </Entity>
+      <Entity type="Delegate">
+        <Name>Observer</Name>
+        <Access>Public</Access>
+        <Location left="355" top="813" />
+        <Size width="162" height="61" />
+        <Collapsed>False</Collapsed>
+        <ReturnType>void</ReturnType>
+      </Entity>
+      <Entity type="Comment">
+        <Text>The ControlPanelController/DirectroyFormController both retain handles to this iterator as well. I have ommited arrows denoting this fact for the sake of readability, and preventing redundency. There is only one Iterator object in the application, and it is constructed in the program class. </Text>
+        <Location left="686" top="112" />
+        <Size width="257" height="130" />
+      </Entity>
+      <Entity type="Comment">
+        <Text>The file system (implemented using a composite definition) is referenced in each of the controllers. In the class diagram, I have ommited arrows to each of the controllers for the sake of readability and prevening redundency. The 'Program' class will create the initial file structure as a Dictionary of folders. In the implementation, the file system will be an ENTIRELY SEPERATE Visual Studio Project. I will pass this project by references to the rest of the classes.</Text>
+        <Location left="1732" top="52" />
+        <Size width="284" height="141" />
+      </Entity>
+      <Entity type="Comment">
+        <Text>By: Christian J. Hughes
+CIS 501 Assignment #6</Text>
+        <Location left="15" top="14" />
+        <Size width="192" height="50" />
+      </Entity>
+    </Entities>
+    <Relationships>
+      <Relationship type="Generalization" first="5" second="3">
+        <StartOrientation>Vertical</StartOrientation>
+        <EndOrientation>Vertical</EndOrientation>
+      </Relationship>
+      <Relationship type="Generalization" first="4" second="3">
+        <StartOrientation>Vertical</StartOrientation>
+        <EndOrientation>Vertical</EndOrientation>
+      </Relationship>
+      <Relationship type="Association" first="5" second="3">
+        <Label>
+        </Label>
+        <StartOrientation>Horizontal</StartOrientation>
+        <EndOrientation>Horizontal</EndOrientation>
+        <BendPoint relativeToStartShape="True">
+          <X>1202</X>
+          <Y>389</Y>
+        </BendPoint>
+        <Direction>Unidirectional</Direction>
+        <AssociationType>Association</AssociationType>
+        <EndRole>- { Dictionary&lt;string,Entry&gt; contents }</EndRole>
+      </Relationship>
+      <Relationship type="Comment" first="9" second="7">
+        <StartOrientation>Vertical</StartOrientation>
+        <EndOrientation>Vertical</EndOrientation>
+        <BendPoint relativeToStartShape="False">
+          <X>160</X>
+          <Y>201</Y>
+        </BendPoint>
+      </Relationship>
+      <Relationship type="Association" first="1" second="10">
+        <StartOrientation>Horizontal</StartOrientation>
+        <EndOrientation>Horizontal</EndOrientation>
+        <Direction>Unidirectional</Direction>
+        <AssociationType>Association</AssociationType>
+        <EndRole>controller</EndRole>
+      </Relationship>
+      <Relationship type="Association" first="0" second="8">
+        <StartOrientation>Horizontal</StartOrientation>
+        <EndOrientation>Horizontal</EndOrientation>
+        <Direction>Unidirectional</Direction>
+        <AssociationType>Association</AssociationType>
+        <EndRole>controller</EndRole>
+      </Relationship>
+      <Relationship type="Association" first="8" second="10">
+        <StartOrientation>Vertical</StartOrientation>
+        <EndOrientation>Vertical</EndOrientation>
+        <Direction>Unidirectional</Direction>
+        <AssociationType>Composition</AssociationType>
+        <EndMultiplicity>0..*</EndMultiplicity>
+      </Relationship>
+      <Relationship type="Association" first="8" second="1">
+        <StartOrientation>Horizontal</StartOrientation>
+        <EndOrientation>Vertical</EndOrientation>
+        <BendPoint relativeToStartShape="True">
+          <X>526</X>
+          <Y>765</Y>
+        </BendPoint>
+        <BendPoint relativeToStartShape="False">
+          <X>163</X>
+          <Y>868</Y>
+        </BendPoint>
+        <Direction>Unidirectional</Direction>
+        <AssociationType>Composition</AssociationType>
+        <EndMultiplicity>0..*</EndMultiplicity>
+      </Relationship>
+      <Relationship type="Association" first="10" second="2">
+        <StartOrientation>Vertical</StartOrientation>
+        <EndOrientation>Vertical</EndOrientation>
+        <BendPoint relativeToStartShape="True">
+          <X>591</X>
+          <Y>1182</Y>
+        </BendPoint>
+        <BendPoint relativeToStartShape="False">
+          <X>591</X>
+          <Y>1166</Y>
+        </BendPoint>
+        <Direction>Unidirectional</Direction>
+        <AssociationType>Composition</AssociationType>
+        <EndMultiplicity>0..*</EndMultiplicity>
+      </Relationship>
+      <Relationship type="Dependency" first="8" second="12">
+        <Label>
+        </Label>
+        <StartOrientation>Horizontal</StartOrientation>
+        <EndOrientation>Horizontal</EndOrientation>
+      </Relationship>
+      <Relationship type="Dependency" first="8" second="13">
+        <Label>
+        </Label>
+        <StartOrientation>Horizontal</StartOrientation>
+        <EndOrientation>Horizontal</EndOrientation>
+      </Relationship>
+      <Relationship type="Dependency" first="8" second="14">
+        <Label>
+        </Label>
+        <StartOrientation>Horizontal</StartOrientation>
+        <EndOrientation>Horizontal</EndOrientation>
+        <BendPoint relativeToStartShape="True">
+          <X>1212</X>
+          <Y>786</Y>
+        </BendPoint>
+      </Relationship>
+      <Relationship type="Dependency" first="14" second="10">
+        <Label>
+        </Label>
+        <StartOrientation>Horizontal</StartOrientation>
+        <EndOrientation>Vertical</EndOrientation>
+        <BendPoint relativeToStartShape="True">
+          <X>1450</X>
+          <Y>789</Y>
+        </BendPoint>
+        <BendPoint relativeToStartShape="False">
+          <X>1450</X>
+          <Y>868</Y>
+        </BendPoint>
+      </Relationship>
+      <Relationship type="Dependency" first="13" second="10">
+        <Label>
+        </Label>
+        <StartOrientation>Horizontal</StartOrientation>
+        <EndOrientation>Vertical</EndOrientation>
+        <BendPoint relativeToStartShape="True">
+          <X>1549</X>
+          <Y>598</Y>
+        </BendPoint>
+        <BendPoint relativeToStartShape="False">
+          <X>1549</X>
+          <Y>868</Y>
+        </BendPoint>
+      </Relationship>
+      <Relationship type="Dependency" first="12" second="10">
+        <Label>
+        </Label>
+        <StartOrientation>Horizontal</StartOrientation>
+        <EndOrientation>Vertical</EndOrientation>
+        <BendPoint relativeToStartShape="True">
+          <X>1486</X>
+          <Y>687</Y>
+        </BendPoint>
+        <BendPoint relativeToStartShape="False">
+          <X>1486</X>
+          <Y>868</Y>
+        </BendPoint>
+      </Relationship>
+      <Relationship type="Dependency" first="13" second="2">
+        <Label>
+        </Label>
+        <StartOrientation>Horizontal</StartOrientation>
+        <EndOrientation>Horizontal</EndOrientation>
+        <BendPoint relativeToStartShape="True">
+          <X>1452</X>
+          <Y>570</Y>
+        </BendPoint>
+        <BendPoint relativeToStartShape="False">
+          <X>1602</X>
+          <Y>1247</Y>
+        </BendPoint>
+      </Relationship>
+      <Relationship type="Comment" first="15" second="13">
+        <StartOrientation>Horizontal</StartOrientation>
+        <EndOrientation>Horizontal</EndOrientation>
+        <BendPoint relativeToStartShape="False">
+          <X>1453</X>
+          <Y>548</Y>
+        </BendPoint>
+      </Relationship>
+      <Relationship type="Comment" first="16" second="1">
+        <StartOrientation>Vertical</StartOrientation>
+        <EndOrientation>Vertical</EndOrientation>
+      </Relationship>
+      <Relationship type="Dependency" first="1" second="17">
+        <Label>
+        </Label>
+        <StartOrientation>Vertical</StartOrientation>
+        <EndOrientation>Horizontal</EndOrientation>
+        <BendPoint relativeToStartShape="True">
+          <X>322</X>
+          <Y>860</Y>
+        </BendPoint>
+      </Relationship>
+      <Relationship type="Dependency" first="8" second="17">
+        <Label>
+        </Label>
+        <StartOrientation>Vertical</StartOrientation>
+        <EndOrientation>Horizontal</EndOrientation>
+        <BendPoint relativeToStartShape="True">
+          <X>572</X>
+          <Y>862</Y>
+        </BendPoint>
+        <BendPoint relativeToStartShape="False">
+          <X>542</X>
+          <Y>862</Y>
+        </BendPoint>
+      </Relationship>
+      <Relationship type="Dependency" first="10" second="17">
+        <Label>
+        </Label>
+        <StartOrientation>Horizontal</StartOrientation>
+        <EndOrientation>Vertical</EndOrientation>
+        <BendPoint relativeToStartShape="True">
+          <X>526</X>
+          <Y>977</Y>
+        </BendPoint>
+        <BendPoint relativeToStartShape="False">
+          <X>440</X>
+          <Y>906</Y>
+        </BendPoint>
+      </Relationship>
+      <Relationship type="Comment" first="11" second="2">
+        <StartOrientation>Horizontal</StartOrientation>
+        <EndOrientation>Horizontal</EndOrientation>
+        <BendPoint relativeToStartShape="True">
+          <X>401</X>
+          <Y>1337</Y>
+        </BendPoint>
+      </Relationship>
+      <Relationship type="Association" first="7" second="0">
+        <Label>
+        </Label>
+        <StartOrientation>Vertical</StartOrientation>
+        <EndOrientation>Vertical</EndOrientation>
+        <Direction>Unidirectional</Direction>
+        <AssociationType>Composition</AssociationType>
+        <EndMultiplicity>1</EndMultiplicity>
+      </Relationship>
+      <Relationship type="Association" first="7" second="8">
+        <Label>
+        </Label>
+        <StartOrientation>Vertical</StartOrientation>
+        <EndOrientation>Vertical</EndOrientation>
+        <Direction>Unidirectional</Direction>
+        <AssociationType>Composition</AssociationType>
+        <EndMultiplicity>1</EndMultiplicity>
+      </Relationship>
+      <Relationship type="Association" first="7" second="6">
+        <Label>
+        </Label>
+        <StartOrientation>Horizontal</StartOrientation>
+        <EndOrientation>Horizontal</EndOrientation>
+        <Direction>Unidirectional</Direction>
+        <AssociationType>Composition</AssociationType>
+        <EndMultiplicity>1</EndMultiplicity>
+      </Relationship>
+      <Relationship type="Dependency" first="6" second="3">
+        <StartOrientation>Vertical</StartOrientation>
+        <EndOrientation>Horizontal</EndOrientation>
+        <BendPoint relativeToStartShape="True">
+          <X>1040</X>
+          <Y>286</Y>
+        </BendPoint>
+        <BendPoint relativeToStartShape="False">
+          <X>1431</X>
+          <Y>87</Y>
+        </BendPoint>
+      </Relationship>
+      <Relationship type="Association" first="7" second="3">
+        <Label>
+        </Label>
+        <StartOrientation>Vertical</StartOrientation>
+        <EndOrientation>Horizontal</EndOrientation>
+        <BendPoint relativeToStartShape="False">
+          <X>1431</X>
+          <Y>69</Y>
+        </BendPoint>
+        <Direction>Unidirectional</Direction>
+        <AssociationType>Composition</AssociationType>
+        <EndMultiplicity>*</EndMultiplicity>
+      </Relationship>
+      <Relationship type="Comment" first="18" second="6">
+        <StartOrientation>Vertical</StartOrientation>
+        <EndOrientation>Vertical</EndOrientation>
+        <BendPoint relativeToStartShape="False">
+          <X>894</X>
+          <Y>293</Y>
+        </BendPoint>
+      </Relationship>
+      <Relationship type="Comment" first="19" second="3">
+        <StartOrientation>Horizontal</StartOrientation>
+        <EndOrientation>Horizontal</EndOrientation>
+      </Relationship>
+    </Relationships>
+  </ProjectItem>
+</Project>

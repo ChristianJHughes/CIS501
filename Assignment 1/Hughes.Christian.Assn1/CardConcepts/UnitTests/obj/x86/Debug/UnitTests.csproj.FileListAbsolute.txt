@@ -1,0 +1,28 @@
+C:\Users\schmidt\Documents\Visual Studio 2010\Projects\501s13VS\Lecture02VS\CardConcepts\UnitTests\bin\Debug\UnitTests.exe
+C:\Users\schmidt\Documents\Visual Studio 2010\Projects\501s13VS\Lecture02VS\CardConcepts\UnitTests\bin\Debug\UnitTests.pdb
+C:\Users\schmidt\Documents\Visual Studio 2010\Projects\501s13VS\Lecture02VS\CardConcepts\UnitTests\bin\Debug\CardConcepts.dll
+C:\Users\schmidt\Documents\Visual Studio 2010\Projects\501s13VS\Lecture02VS\CardConcepts\UnitTests\bin\Debug\CardConcepts.pdb
+C:\Users\schmidt\Documents\Visual Studio 2010\Projects\501s13VS\Lecture02VS\CardConcepts\UnitTests\obj\x86\Debug\UnitTests.exe
+C:\Users\schmidt\Documents\Visual Studio 2010\Projects\501s13VS\Lecture02VS\CardConcepts\UnitTests\obj\x86\Debug\UnitTests.pdb
+C:\Users\schmidt\Documents\Visual Studio 2010\Projects\501s13VS\Lecture02VS\CardConcepts\UnitTests\obj\x86\Debug\UnitTests.csprojResolveAssemblyReference.cache
+C:\Users\schmidt\Documents\Visual Studio 2010\Projects\501s14VS\Lecture02VS\CardConcepts\UnitTests\obj\x86\Debug\UnitTests.exe
+C:\Users\schmidt\Documents\Visual Studio 2010\Projects\501s14VS\Lecture02VS\CardConcepts\UnitTests\obj\x86\Debug\UnitTests.pdb
+C:\Users\schmidt\Documents\Visual Studio 2010\Projects\501s14VS\Lecture02VS\CardConcepts\UnitTests\bin\Debug\UnitTests.exe
+C:\Users\schmidt\Documents\Visual Studio 2010\Projects\501s14VS\Lecture02VS\CardConcepts\UnitTests\bin\Debug\UnitTests.pdb
+C:\Users\schmidt\Documents\Visual Studio 2010\Projects\501s14VS\Lecture02VS\CardConcepts\UnitTests\bin\Debug\CardConcepts.dll
+C:\Users\schmidt\Documents\Visual Studio 2010\Projects\501s14VS\Lecture02VS\CardConcepts\UnitTests\bin\Debug\CardConcepts.pdb
+C:\Users\schmidt\Documents\Visual Studio 2010\Projects\501s14VS\Lecture02VS\CardConcepts\UnitTests\obj\x86\Debug\UnitTests.csprojResolveAssemblyReference.cache
+C:\cygwin\home\schmidt\501s14\501s14VS\Lecture02VS\CardConcepts\UnitTests\bin\Debug\UnitTests.exe
+C:\cygwin\home\schmidt\501s14\501s14VS\Lecture02VS\CardConcepts\UnitTests\bin\Debug\UnitTests.pdb
+C:\cygwin\home\schmidt\501s14\501s14VS\Lecture02VS\CardConcepts\UnitTests\bin\Debug\CardConcepts.dll
+C:\cygwin\home\schmidt\501s14\501s14VS\Lecture02VS\CardConcepts\UnitTests\bin\Debug\CardConcepts.pdb
+C:\cygwin\home\schmidt\501s14\501s14VS\Lecture02VS\CardConcepts\UnitTests\obj\x86\Debug\UnitTests.csprojResolveAssemblyReference.cache
+C:\cygwin\home\schmidt\501s14\501s14VS\Lecture02VS\CardConcepts\UnitTests\obj\x86\Debug\UnitTests.exe
+C:\cygwin\home\schmidt\501s14\501s14VS\Lecture02VS\CardConcepts\UnitTests\obj\x86\Debug\UnitTests.pdb
+C:\Users\SoClassyItHurts\Desktop\Hughes.Christian.Assn1\CardConcepts\UnitTests\bin\Debug\UnitTests.exe
+C:\Users\SoClassyItHurts\Desktop\Hughes.Christian.Assn1\CardConcepts\UnitTests\bin\Debug\UnitTests.pdb
+C:\Users\SoClassyItHurts\Desktop\Hughes.Christian.Assn1\CardConcepts\UnitTests\bin\Debug\CardConcepts.dll
+C:\Users\SoClassyItHurts\Desktop\Hughes.Christian.Assn1\CardConcepts\UnitTests\bin\Debug\CardConcepts.pdb
+C:\Users\SoClassyItHurts\Desktop\Hughes.Christian.Assn1\CardConcepts\UnitTests\obj\x86\Debug\UnitTests.csprojResolveAssemblyReference.cache
+C:\Users\SoClassyItHurts\Desktop\Hughes.Christian.Assn1\CardConcepts\UnitTests\obj\x86\Debug\UnitTests.exe
+C:\Users\SoClassyItHurts\Desktop\Hughes.Christian.Assn1\CardConcepts\UnitTests\obj\x86\Debug\UnitTests.pdb

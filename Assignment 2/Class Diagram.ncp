@@ -1,0 +1,284 @@
+<Project>
+  <Name>Hughes.Christian.Assn2</Name>
+  <ProjectItem type="NClass.DiagramEditor.ClassDiagram.Diagram" assembly="NClass.DiagramEditor, Version=2.4.1823.0, Culture=neutral, PublicKeyToken=null">
+    <Name>CardConcepts</Name>
+    <Language>CSharp</Language>
+    <Entities>
+      <Entity type="Class">
+        <Name>Card</Name>
+        <Access>Public</Access>
+        <Location left="135" top="62" />
+        <Size width="162" height="216" />
+        <Collapsed>False</Collapsed>
+        <Member type="Field">public Count count</Member>
+        <Member type="Field">public Suit suit</Member>
+        <Member type="Method">public int BJvalue()</Member>
+        <Member type="Method">public string ToString()</Member>
+        <Member type="Constructor">public Card(Count a, Suit b)</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>Deck</Name>
+        <Access>Public</Access>
+        <Location left="3" top="320" />
+        <Size width="162" height="216" />
+        <Collapsed>False</Collapsed>
+        <Member type="Field">private List&lt;Card&gt; d</Member>
+        <Member type="Field">private List&lt;Card&gt; discards</Member>
+        <Member type="Constructor">public Deck()</Member>
+        <Member type="Method">public void acceptDiscards(List&lt;Card&gt; dis)</Member>
+        <Member type="Method">public Card deal()</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>Hand</Name>
+        <Access>Public</Access>
+        <Location left="240" top="320" />
+        <Size width="162" height="216" />
+        <Collapsed>False</Collapsed>
+        <Member type="Field">private List&lt;Card&gt; h</Member>
+        <Member type="Method">public List&lt;Card&gt; surrenderCards()</Member>
+        <Member type="Method">public void add(Card c)</Member>
+        <Member type="Method">public int BJscore()</Member>
+        <Member type="Method">public string ToString()</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Enum">
+        <Name>Suit</Name>
+        <Access>Public</Access>
+        <Location left="378" top="10" />
+        <Size width="162" height="216" />
+        <Collapsed>False</Collapsed>
+        <Value>Spades</Value>
+        <Value>Hearts</Value>
+        <Value>Diamonds</Value>
+        <Value>Clubs</Value>
+      </Entity>
+      <Entity type="Enum">
+        <Name>Count</Name>
+        <Access>Public</Access>
+        <Location left="560" top="43" />
+        <Size width="162" height="282" />
+        <Collapsed>False</Collapsed>
+        <Value>Ace</Value>
+        <Value>Two</Value>
+        <Value>Three</Value>
+        <Value>Four</Value>
+        <Value>Five</Value>
+        <Value>Six</Value>
+        <Value>Seven</Value>
+        <Value>Eight</Value>
+        <Value>Nine</Value>
+        <Value>Ten</Value>
+        <Value>Jack</Value>
+        <Value>Queen</Value>
+        <Value>King</Value>
+      </Entity>
+    </Entities>
+    <Relationships>
+      <Relationship type="Association" first="2" second="0">
+        <Label>
+        </Label>
+        <StartOrientation>Vertical</StartOrientation>
+        <EndOrientation>Vertical</EndOrientation>
+        <BendPoint relativeToStartShape="False">
+          <X>276</X>
+          <Y>303</Y>
+        </BendPoint>
+        <Direction>Unidirectional</Direction>
+        <AssociationType>Association</AssociationType>
+        <EndMultiplicity>*</EndMultiplicity>
+      </Relationship>
+      <Relationship type="Association" first="1" second="0">
+        <Label>
+        </Label>
+        <StartOrientation>Vertical</StartOrientation>
+        <EndOrientation>Vertical</EndOrientation>
+        <BendPoint relativeToStartShape="False">
+          <X>152</X>
+          <Y>303</Y>
+        </BendPoint>
+        <Direction>Unidirectional</Direction>
+        <AssociationType>Composition</AssociationType>
+        <EndMultiplicity>*</EndMultiplicity>
+      </Relationship>
+      <Relationship type="Dependency" first="0" second="3">
+        <StartOrientation>Horizontal</StartOrientation>
+        <EndOrientation>Horizontal</EndOrientation>
+      </Relationship>
+      <Relationship type="Dependency" first="0" second="4">
+        <StartOrientation>Horizontal</StartOrientation>
+        <EndOrientation>Horizontal</EndOrientation>
+        <BendPoint relativeToStartShape="False">
+          <X>526</X>
+          <Y>248</Y>
+        </BendPoint>
+      </Relationship>
+    </Relationships>
+  </ProjectItem>
+  <ProjectItem type="NClass.DiagramEditor.ClassDiagram.Diagram" assembly="NClass.DiagramEditor, Version=2.4.1823.0, Culture=neutral, PublicKeyToken=null">
+    <Name>BJ2</Name>
+    <Language>CSharp</Language>
+    <Entities>
+      <Entity type="Class">
+        <Name>Dealer</Name>
+        <Access>Public</Access>
+        <Location left="27" top="37" />
+        <Size width="162" height="216" />
+        <Collapsed>False</Collapsed>
+        <Member type="Field">private Deck d</Member>
+        <Member type="Field">private List&lt;Player&gt; guestPlayers</Member>
+        <Member type="Field">private Player housePlayer</Member>
+        <Member type="Method">public void playRound()</Member>
+        <Member type="Constructor">public Dealer(List&lt;Player&gt; guestPlayers, Player housePlayer)</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Interface">
+        <Name>Player</Name>
+        <Access>Public</Access>
+        <Location left="378" top="29" />
+        <Size width="162" height="216" />
+        <Collapsed>False</Collapsed>
+        <Member type="Method">bool wantsCard()</Member>
+        <Member type="Method">void getsCard(Card c)</Member>
+        <Member type="Method">Hand showHand()</Member>
+        <Member type="Method">void outcomeOfRound(Outcome result)</Member>
+      </Entity>
+      <Entity type="Enum">
+        <Name>Outcome</Name>
+        <Access>Public</Access>
+        <Location left="479" top="296" />
+        <Size width="162" height="216" />
+        <Collapsed>False</Collapsed>
+        <Value>Win</Value>
+        <Value>NotWin</Value>
+      </Entity>
+      <Entity type="Class">
+        <Name>Human</Name>
+        <Access>Public</Access>
+        <Location left="269" top="296" />
+        <Size width="162" height="216" />
+        <Collapsed>False</Collapsed>
+        <Member type="Field">private Hand h</Member>
+        <Member type="Constructor">public Human(string name)</Member>
+        <Member type="Method">public bool wantsCard()</Member>
+        <Member type="Method">public void getsCard(Card c)</Member>
+        <Member type="Method">public Hand showHand()</Member>
+        <Member type="Method">public void outcomeOfRound(Outcome result)</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>OutputForm</Name>
+        <Access>Public</Access>
+        <Location left="150" top="587" />
+        <Size width="162" height="216" />
+        <Collapsed>False</Collapsed>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>Android</Name>
+        <Access>Public</Access>
+        <Location left="743" top="296" />
+        <Size width="162" height="216" />
+        <Collapsed>False</Collapsed>
+        <Member type="Field">private Hand h</Member>
+        <Member type="Constructor">public Android(string name)</Member>
+        <Member type="Method">public bool wantsCard()</Member>
+        <Member type="Method">public void getsCard(Card c)</Member>
+        <Member type="Method">public Hand showHand()</Member>
+        <Member type="Method">public void outcomeOfResult(Outcome result)</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+    </Entities>
+    <Relationships>
+      <Relationship type="Association" first="0" second="1">
+        <StartOrientation>Horizontal</StartOrientation>
+        <EndOrientation>Horizontal</EndOrientation>
+        <BendPoint relativeToStartShape="False">
+          <X>352</X>
+          <Y>220</Y>
+        </BendPoint>
+        <Direction>Unidirectional</Direction>
+        <AssociationType>Association</AssociationType>
+        <EndMultiplicity>1</EndMultiplicity>
+      </Relationship>
+      <Relationship type="Association" first="0" second="1">
+        <StartOrientation>Horizontal</StartOrientation>
+        <EndOrientation>Horizontal</EndOrientation>
+        <BendPoint relativeToStartShape="False">
+          <X>353</X>
+          <Y>141</Y>
+        </BendPoint>
+        <Direction>Unidirectional</Direction>
+        <AssociationType>Aggregation</AssociationType>
+        <EndMultiplicity>1..*</EndMultiplicity>
+      </Relationship>
+      <Relationship type="Realization" first="3" second="1">
+        <StartOrientation>Vertical</StartOrientation>
+        <EndOrientation>Vertical</EndOrientation>
+        <BendPoint relativeToStartShape="False">
+          <X>394</X>
+          <Y>272</Y>
+        </BendPoint>
+      </Relationship>
+      <Relationship type="Realization" first="5" second="1">
+        <StartOrientation>Vertical</StartOrientation>
+        <EndOrientation>Horizontal</EndOrientation>
+        <BendPoint relativeToStartShape="False">
+          <X>604</X>
+          <Y>209</Y>
+        </BendPoint>
+      </Relationship>
+      <Relationship type="Dependency" first="1" second="2">
+        <Label>
+        </Label>
+        <StartOrientation>Vertical</StartOrientation>
+        <EndOrientation>Vertical</EndOrientation>
+        <BendPoint relativeToStartShape="True">
+          <X>516</X>
+          <Y>270</Y>
+        </BendPoint>
+      </Relationship>
+      <Relationship type="Dependency" first="5" second="2">
+        <Label>
+        </Label>
+        <StartOrientation>Horizontal</StartOrientation>
+        <EndOrientation>Horizontal</EndOrientation>
+      </Relationship>
+      <Relationship type="Association" first="3" second="4">
+        <Label>
+        </Label>
+        <StartOrientation>Vertical</StartOrientation>
+        <EndOrientation>Vertical</EndOrientation>
+        <BendPoint relativeToStartShape="True">
+          <X>293</X>
+          <Y>539</Y>
+        </BendPoint>
+        <Direction>Unidirectional</Direction>
+        <AssociationType>Composition</AssociationType>
+      </Relationship>
+      <Relationship type="Association" first="5" second="4">
+        <Label>
+        </Label>
+        <StartOrientation>Vertical</StartOrientation>
+        <EndOrientation>Horizontal</EndOrientation>
+        <BendPoint relativeToStartShape="False">
+          <X>390</X>
+          <Y>684</Y>
+        </BendPoint>
+        <Direction>Unidirectional</Direction>
+        <AssociationType>Composition</AssociationType>
+      </Relationship>
+      <Relationship type="Dependency" first="3" second="2">
+        <Label>
+        </Label>
+        <StartOrientation>Horizontal</StartOrientation>
+        <EndOrientation>Horizontal</EndOrientation>
+        <BendPoint relativeToStartShape="True">
+          <X>456</X>
+          <Y>426</Y>
+        </BendPoint>
+      </Relationship>
+    </Relationships>
+  </ProjectItem>
+</Project>

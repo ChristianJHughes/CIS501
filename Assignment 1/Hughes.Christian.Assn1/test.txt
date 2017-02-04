@@ -1,0 +1,128 @@
+Welcome to Blackjack!
+
+New Round:
+Your top card is: Jack of Diamonds
+The house player's top card is: Eight of Hearts
+The house player does NOT hold a blackjack, so play continues:
+
+Your hand is:
+Jack of Diamonds
+Four of Hearts
+The score is: 14
+Do you want another card (y or n)? y
+Your hand is:
+Jack of Diamonds
+Four of Hearts
+Five of Diamonds
+The score is: 19
+Do you want another card (y or n)? n
+
+The house player's hand is:
+Eight of Hearts
+Five of Clubs
+The score is 13
+The house player's hand is:
+Eight of Hearts
+Five of Clubs
+Ace of Diamonds
+The score is 14
+The house player's hand is:
+Eight of Hearts
+Five of Clubs
+Ace of Diamonds
+Ace of Spades
+The score is 15
+The house player's hand is:
+Eight of Hearts
+Five of Clubs
+Ace of Diamonds
+Ace of Spades
+Jack of Clubs
+The score is 25
+A bust!
+
+You win!
+After 1 rounds, you have 1 win(s).
+Do you want to play another round (y or n)? y
+
+New Round:
+Your top card is: Ten of Hearts
+The house player's top card is: Nine of Clubs
+The house player does NOT hold a blackjack, so play continues:
+
+Your hand is:
+Ten of Hearts
+Ace of Hearts
+The score is: 21
+Wowzers! You were dealt blackjack, lucky you!
+You win!
+
+After 2 rounds, you have 2 win(s).
+Do you want to play another round (y or n)? y
+
+New Round:
+Your top card is: Ten of Spades
+The house player's top card is: Six of Diamonds
+The house player does NOT hold a blackjack, so play continues:
+
+Your hand is:
+Ten of Spades
+Three of Spades
+The score is: 13
+Do you want another card (y or n)? y
+Your hand is:
+Ten of Spades
+Three of Spades
+Seven of Clubs
+The score is: 20
+Do you want another card (y or n)? n
+
+The house player's hand is:
+Six of Diamonds
+Four of Diamonds
+The score is 10
+The house player's hand is:
+Six of Diamonds
+Four of Diamonds
+Eight of Clubs
+The score is 18
+
+You Win!
+After 3 rounds, you have 3 win(s).
+Do you want to play another round (y or n)? y
+
+New Round:
+Your top card is: Two of Spades
+The house player's top card is: Eight of Diamonds
+The house player does NOT hold a blackjack, so play continues:
+
+Your hand is:
+Two of Spades
+Jack of Spades
+The score is: 12
+Do you want another card (y or n)? y
+Your hand is:
+Two of Spades
+Jack of Spades
+King of Hearts
+The score is: 22
+A bust!
+
+You lose!
+After 4 rounds, you have 3 win(s).
+Do you want to play another round (y or n)? n
+
+Thank you for playing Blackjack by Christian Hughes!
+Just hit enter to exit.
+
+
+
+
+
+
+
+
+
+
+
+

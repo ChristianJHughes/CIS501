@@ -1,0 +1,4 @@
+C:\Users\cjhughes255\Desktop\Hughes.Christian.Assn5\HughesBankingSystem\BankingDatabase\bin\Debug\BankingDatabase.dll
+C:\Users\cjhughes255\Desktop\Hughes.Christian.Assn5\HughesBankingSystem\BankingDatabase\bin\Debug\BankingDatabase.pdb
+C:\Users\cjhughes255\Desktop\Hughes.Christian.Assn5\HughesBankingSystem\BankingDatabase\obj\Debug\BankingDatabase.dll
+C:\Users\cjhughes255\Desktop\Hughes.Christian.Assn5\HughesBankingSystem\BankingDatabase\obj\Debug\BankingDatabase.pdb

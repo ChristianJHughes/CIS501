@@ -1,0 +1,8 @@
+C:\Users\cjhughes255\Desktop\Hughes.Christian.Assn5\HughesBankingSystem\UnitTests\bin\Debug\UnitTests.exe.config
+C:\Users\cjhughes255\Desktop\Hughes.Christian.Assn5\HughesBankingSystem\UnitTests\bin\Debug\UnitTests.exe
+C:\Users\cjhughes255\Desktop\Hughes.Christian.Assn5\HughesBankingSystem\UnitTests\bin\Debug\UnitTests.pdb
+C:\Users\cjhughes255\Desktop\Hughes.Christian.Assn5\HughesBankingSystem\UnitTests\obj\Debug\UnitTests.exe
+C:\Users\cjhughes255\Desktop\Hughes.Christian.Assn5\HughesBankingSystem\UnitTests\obj\Debug\UnitTests.pdb
+C:\Users\cjhughes255\Desktop\Hughes.Christian.Assn5\HughesBankingSystem\UnitTests\obj\Debug\UnitTests.csprojResolveAssemblyReference.cache
+C:\Users\cjhughes255\Desktop\Hughes.Christian.Assn5\HughesBankingSystem\UnitTests\bin\Debug\BankingDatabase.dll
+C:\Users\cjhughes255\Desktop\Hughes.Christian.Assn5\HughesBankingSystem\UnitTests\bin\Debug\BankingDatabase.pdb

@@ -1,0 +1,9 @@
+NOTE:
+
+-There is no UnitTests VS project in the Blackjack VS Solution because there are no additional classes beyond program.cs (and therefore no need for unit testing). 
+
+INFORMATION: 
+Author: Christian J. Hughes
+Wildcat ID: 855891765
+Section: CIS 501 Tu/Th 1:00 PM
+Professor: David Schmidt
