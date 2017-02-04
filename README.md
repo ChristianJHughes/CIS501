@@ -1,6 +1,6 @@
 # CIS 501
 
-### [CIS 308 - *Software Architecture and Design*](http://catalog.k-state.edu/preview_course.php?catoid=28&coid=149160&print)
+### [CIS 501 - *Software Architecture and Design*](http://catalog.k-state.edu/preview_course.php?catoid=28&coid=149160&print)
 **Kansas State University: Spring 2015**
 
 This repository serves as an archive of projects completed for CIS 501.
